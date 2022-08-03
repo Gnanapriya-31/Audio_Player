@@ -109,6 +109,7 @@ const AudioPlayer = props => {
   const goBack = async () => {
     try {
       navigation.goBack();
+      TrackPlayer.pause();
     } catch (e) {
       console.log(e);
     }
